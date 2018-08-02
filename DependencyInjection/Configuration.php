@@ -1,6 +1,6 @@
 <?php
 
-namespace reliefapps\SQLServerBundle\DependencyInjection;
+namespace garinlu\SQLServerBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('reliefapps_sql_server');
+        $rootNode = $treeBuilder->root('garinlu_sql_server');
 
         $rootNode
             ->children()

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace reliefapps\SQLServerBundle\Command;
+namespace garinlu\SQLServerBundle\Command;
 
 
 use CommonBundle\Utils\API\SQLServerService;
@@ -16,7 +16,7 @@ class ExecuteQueryCommand extends ContainerAwareCommand
     {
         $this
             // the name of the command (the part after "bin/console")
-            ->setName('ra:sqlserver:query')
+            ->setName('gl:sqlserver:query')
             // the short description shown while running "php bin/console list"
             ->setDescription('Execute a query on SQL Server')
             // the full command description shown when running the command with
@@ -45,7 +45,7 @@ class ExecuteQueryCommand extends ContainerAwareCommand
             "====================================================================================",
             "<comment>Connection to the SQL Server....</comment>",
         ]);
-        $SQLService = $this->getContainer()->get('ra.sql_server_service');
+        $SQLService = $this->getContainer()->get('gl.sql_server_service');
         $connection = $SQLService->connectTo();
 
         $output->writeln([

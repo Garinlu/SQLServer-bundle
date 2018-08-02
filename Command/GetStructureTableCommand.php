@@ -1,10 +1,10 @@
 <?php
 
 
-namespace reliefapps\SQLServerBundle\Command;
+namespace garinlu\SQLServerBundle\Command;
 
 
-use reliefapps\SQLServerBundle\Utils\SQLServerService;
+use garinlu\SQLServerBundle\Utils\SQLServerService;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -18,7 +18,7 @@ class GetStructureTableCommand extends ContainerAwareCommand
     {
         $this
             // the name of the command (the part after "bin/console")
-            ->setName('ra:sqlserver:structure')
+            ->setName('gl:sqlserver:structure')
             // the short description shown while running "php bin/console list"
             ->setDescription('Show structure of a table')
             // the full command description shown when running the command with
@@ -49,7 +49,7 @@ class GetStructureTableCommand extends ContainerAwareCommand
             "====================================================================================",
             "<comment>Connection to the SQL Server....</comment>",
         ]);
-        $SQLService = $this->getContainer()->get('ra.sql_server_service');
+        $SQLService = $this->getContainer()->get('gl.sql_server_service');
         $connection = $SQLService->connectTo();
 
         $output->writeln([
@@ -58,7 +58,7 @@ class GetStructureTableCommand extends ContainerAwareCommand
             ""
         ]);
         /** @var SQLServerService $sqlSrvService */
-        $sqlSrvService = $this->getContainer()->get('ra.sql_server_service');
+        $sqlSrvService = $this->getContainer()->get('gl.sql_server_service');
 
         do
         {

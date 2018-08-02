@@ -1,7 +1,7 @@
 <?php
 
 
-namespace reliefapps\SQLServerBundle\Command;
+namespace garinlu\SQLServerBundle\Command;
 
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
@@ -15,7 +15,7 @@ class CreateTableCommand extends ContainerAwareCommand
     {
         $this
             // the name of the command (the part after "bin/console")
-            ->setName('ra:sqlserver:create')
+            ->setName('gl:sqlserver:create')
             // the short description shown while running "php bin/console list"
             ->setDescription('Create a table in the SQLServer database of Save The Children')
             // the full command description shown when running the command with
@@ -41,7 +41,7 @@ class CreateTableCommand extends ContainerAwareCommand
             ""
         ]);
 
-        $SQLService = $this->getContainer()->get('ra.sql_server_service');
+        $SQLService = $this->getContainer()->get('gl.sql_server_service');
         $connection = $SQLService->connectTo();
 
         $helper = $this->getHelper('question');

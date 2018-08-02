@@ -1,6 +1,6 @@
 services:
-    ra.sql_server_service:
-        class: reliefapps\SQLServerBundle\Utils\SQLServerService
+    gl.sql_server_service:
+        class: garinlu\SQLServerBundle\Utils\SQLServerService
         arguments:
             - "%sqlserver.serverName%"
             - "%sqlserver.UID%"

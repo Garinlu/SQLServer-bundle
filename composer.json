@@ -7,7 +7,7 @@
   "authors": [
     {
       "name": "lucas",
-      "email": "lucas.reliefapps@gmail.com"
+      "email": "lucas.garinlu@gmail.com"
     }
   ],
   "minimum-stability": "dev",
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "reliefapps\\SQLServerBundle\\": ""
+      "garinlu\\SQLServerBundle\\": ""
     }
   }
 }

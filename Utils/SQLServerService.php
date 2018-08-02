@@ -1,7 +1,7 @@
 <?php
 
 
-namespace reliefapps\SQLServerBundle\Utils;
+namespace garinlu\SQLServerBundle\Utils;
 
 
 class SQLServerService
