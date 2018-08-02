@@ -1,5 +1,5 @@
 {
-  "name": "relief_applications/sqlserver-bundle",
+  "name": "garinlu/sqlserver-bundle",
   "type": "symfony-bundle",
   "description": "A bundle to treat with SQL Server.",
   "keywords": ["symfony", "sqlserver"],
