@@ -1,0 +1,7 @@
+services:
+    ra.sql_server_service:
+        class: reliefapps\SQLServerBundle\Utils\SQLServerService
+        arguments:
+            - "%sqlserver.serverName%"
+            - "%sqlserver.UID%"
+            - "%sqlserver.PWD%"

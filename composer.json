@@ -1,0 +1,26 @@
+{
+  "name": "relief_applications/sqlserver-bundle",
+  "type": "symfony-bundle",
+  "description": "A bundle to treat with SQL Server.",
+  "keywords": ["symfony", "sqlserver"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lucas",
+      "email": "lucas.reliefapps@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "monolog/monolog": "^1.23",
+    "doctrine/orm": ">=2.5"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "reliefapps\\SQLServerBundle\\": ""
+    }
+  }
+}
